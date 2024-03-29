@@ -1,0 +1,167 @@
+.contact{
+  height: 100vh;
+}
+.contact_container {
+  padding: 3rem 0; 
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  width: 100%;
+}
+
+.input_container {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  width: 100%;
+}
+
+.input,
+.contact_button {
+  outline: none;
+  font-size: var(--fs-4);
+  border: 2px solid var(--yellow);
+  padding: 20px 40px;
+  color: white;
+  background: transparent;
+}
+
+.contact_button {
+  background-color: var(--yellow);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact_button:hover {
+  background: var(--box-color);
+  color: var(--white);
+}
+
+textarea {
+  resize: none;
+}
+
+.contact_details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* width: 100%; */
+}
+.contact_icons {
+  height: 50px;
+  width: 50px;
+  font-weight: 500;
+  color: var(--yellow);
+}
+.contact_address,
+.contact_email,
+.contact_phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background: var(--box-color);
+  padding: 10px 20px;
+}
+
+.contact_address p,
+.contact_email p,
+.contact_phone p {
+  font-family: var(--open-sans);
+  font-size: var(--fs-4);
+  color: var(--yellow);
+}
+
+.contact_address span,
+.contact_email span,
+.contact_phone span {
+  font-size: var(--fs-3);
+  color: var(--gray);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact{
+    height: 100%;
+  }
+  .contact_container {
+    padding: 3rem 0;
+    
+    flex-direction: column;
+  }
+  .contact_icons {
+    height: 40px;
+    width: 40px; 
+  }
+  .contact_details {
+    gap: 20px;
+    width: 100%;
+  }
+  .contact_address span,
+  .contact_email span,
+  .contact_phone span {
+    font-size: var(--fs-4);
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .contact_form {
+    gap: 10px;
+    
+  }
+  .contact_container{
+    gap: 20px;
+  }
+  .input_container {
+    flex-direction: column;
+  }
+  .contact_icons {
+    height: 30px;
+    width: 30px; 
+  }
+  .contact_address,
+.contact_email,
+.contact_phone{
+    padding: 10px ;
+}
+  .input,
+  .contact_button {
+    padding: 10px 15px;
+    font-size: var(--fs-5);
+  }
+
+  .contact_address p,
+  .contact_email p,
+  .contact_phone p {
+    font-size: var(--fs-5);
+  }
+
+ 
+}
+@media screen and (max-width: 450px) {
+  
+  .contact_details {
+    gap: 10px;
+  }
+  .contact_icons {
+    height: 20px;
+    width: 20px; 
+  }
+  .contact_address span,
+  .contact_email span,
+  .contact_phone span,
+  .input,
+  .contact_button {
+    font-size: var(--fs-6);
+  }
+}

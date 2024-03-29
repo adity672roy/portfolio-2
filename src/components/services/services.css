@@ -1,0 +1,82 @@
+
+.services {
+  display: grid;
+  padding-top: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.service {
+  background-color: var(--box-color);
+  border-radius: 10px;
+}
+.service_img_wrapper {
+  height: 250px;
+  padding: 20px;
+  width: 100%;
+}
+.service_img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.service_details {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service_name {
+  color: var(--yellow);
+  font-size: var(--fs-3);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.service_charge {
+  font-size: var(--fs-4);
+}
+.service_desc {
+  font-size: var(--fs-6);
+  color: var(--gray);
+}
+
+@media screen and (max-width: 1200px){
+ .services{
+  gap: 20px;
+ }
+  .service_name{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .services{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+  .service_img_wrapper{
+    padding: 10px;
+  }
+  .service_name{
+    font-size: var(--fs-4);
+  }
+}
+@media screen and (max-width: 750px){
+  .services{
+    grid-template-columns: 1fr;
+  }
+  .service_name ,.service_charge{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px){
+ .services{
+  gap: 10px;
+ }
+  .service_name ,.service_charge{
+    font-size: var(--fs-5);
+  }
+  .service_desc{
+    font-size: var(--fs-7);
+  }
+} 
