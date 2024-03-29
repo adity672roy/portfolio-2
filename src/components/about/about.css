@@ -161,6 +161,16 @@
   font-size: var(--fs-5);
   color: var(--gray);
 }
+.social_handles {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.social_img {
+  width: 50px;
+  height: 50px;
+}
 @media screen and (max-width: 1200px) {
   .about {
     flex-direction: column;
@@ -216,6 +226,13 @@
   .company_name {
     font-size: 24px;
   }
+  .social_handles {
+    gap: 10px;
+  }
+  .social_img {
+    width: 40px;
+    height: 40px;
+  }
 }
 @media screen and (max-width: 700px) {
   .about_description {
@@ -266,7 +283,13 @@
     height: 400px;
     width: 400px;
   }
-
+  .social_handles {
+    justify-content: center;
+  }
+  .social_img {
+    width: 30px;
+    height: 30px;
+  }
   .about_left::before {
     left: 5px;
   }

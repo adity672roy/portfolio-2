@@ -56,6 +56,13 @@ const About = ({ data }) => {
             <div className="about_description">
               <p>{data.about.description}</p>
             </div>
+            <div className="social_handles">
+              {data?.social_handles?.map((social) => (
+                <div className="social" key={social._id}>
+                  <img src={social.image.url} alt="" className="social_img" />
+                </div>
+              ))}
+            </div>
             <div className="about_exp_project">
               <div className="about_project">
                 <p>{data.about.some_total} + </p>

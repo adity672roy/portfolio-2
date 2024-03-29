@@ -1,8 +1,8 @@
-.contact{
+.contact {
   height: 100vh;
 }
 .contact_container {
-  padding: 3rem 0; 
+  padding: 3rem 0;
   display: flex;
   gap: 2rem;
   align-items: start;
@@ -12,7 +12,7 @@
 .contact_form {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 20px;
   width: 100%;
 }
 
@@ -91,17 +91,18 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
-  .contact{
+  .contact {
     height: 100%;
   }
   .contact_container {
     padding: 3rem 0;
-    
+
     flex-direction: column;
   }
+
   .contact_icons {
     height: 40px;
-    width: 40px; 
+    width: 40px;
   }
   .contact_details {
     gap: 20px;
@@ -117,9 +118,8 @@ textarea {
 @media screen and (max-width: 590px) {
   .contact_form {
     gap: 10px;
-    
   }
-  .contact_container{
+  .contact_container {
     gap: 20px;
   }
   .input_container {
@@ -127,13 +127,13 @@ textarea {
   }
   .contact_icons {
     height: 30px;
-    width: 30px; 
+    width: 30px;
   }
   .contact_address,
-.contact_email,
-.contact_phone{
-    padding: 10px ;
-}
+  .contact_email,
+  .contact_phone {
+    padding: 10px;
+  }
   .input,
   .contact_button {
     padding: 10px 15px;
@@ -145,17 +145,14 @@ textarea {
   .contact_phone p {
     font-size: var(--fs-5);
   }
-
- 
 }
 @media screen and (max-width: 450px) {
-  
   .contact_details {
     gap: 10px;
   }
   .contact_icons {
     height: 20px;
-    width: 20px; 
+    width: 20px;
   }
   .contact_address span,
   .contact_email span,
